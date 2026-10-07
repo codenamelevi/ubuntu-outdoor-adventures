@@ -3,87 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubuntu Outdoor Adventures</title>
+    <title>Home | Ubuntu Outdoor Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
-    
-    <header>
+    <header class="site-header">
+        <a href="Home.html">
+            <img src="images/logo.png" alt="Ubuntu Outdoor Adventures logo" width="80">
+        </a>
 
-        <div class="logo">
-            <a href="Home.html">
-                <img src="Images/logo.png" alt="Company_logo_Image" height="60">
-            </a>
-        </div>
+        <h1>Ubuntu Outdoor Adventures</h1>
 
-        <div class="heading">
-            <h1>Ubuntu Outdoor Adventures</h1>
-        </div>
-
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="About.html">About</a>
-                </li> 
-
-                <li>
-                    <a href="Activities.html">Activities</a>
-                </li> 
-
-                <li>
-                    <a href="Bookings.html">Bookings</a>
-                </li> 
-
-                <li>
-                    <a href="Contact.html">Contact</a>
-                </li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Activities.html">Activities</a></li>
+                <li><a href="TourPackages.html">Tour Packages</a></li>
+                <li><a href="Bookings.html">Bookings</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
     </header>
-    
+
     <main>
-        <section class="hook">
-            <h2>Your Next Adventure Starts Here</h2>
+        <section class="welcome intro">
+            <h2>Enjoy the outdoors with us</h2>
             <p>
-                Ubuntu Outdoor Adventures is a South African tourism company offering unforgettable hiking trails, camping experiences, mountain biking, and guided nature walks. 
-                From misty mountain peaks to sun-soaked trails, we help you explore the best of the outdoors across South Africa.
+                Ubuntu Outdoor Adventures offers guided outdoor experiences
+                across South Africa. Join us for a hike, a camping trip or a
+                mountain biking adventure.
             </p>
-            <a href="Activities.html">Explore Our Activities</a>
+            <p><a class="button-link" href="Activities.html">See our activities</a></p>
         </section>
 
-
-        <section class="Activities">
-
-            <h3>Our Activities</h3>
-
-            <article>
-                <h4>Hiking Trails</h4>
-                <img src="images/act_1.jpg" alt="A photo-realistic shot of hikers on a mountain trail with a scenic valley view" width="800" height="600">
-                <p>Lace up your boots and discover breathtaking mountain trails, from gentle nature walks to challenging peaks.Our guided hikes take you through some of South Africa's most stunning landscapes, with expert guides ensuring a safe and unforgettable journey</p>
+        <section class="home-columns" id="activities">
+            <article class="content-card">
+                <h2>Hiking</h2>
+                <img src="images/act_1.jpg" alt="Hikers exploring a trail">
+                <p>Explore scenic trails with a guide.</p>
             </article>
 
-            <article>
-                <h4>Camping Under the Stars</h4>
-                <img src="images/act_2.jpg" alt="A campsite at dusk in the South African wilderness with tents and a glowing campfire" width="800" height="600">
-                <p>Escape the city and immerse yourself in the sounds of nature. Our guided camping experiences take you to some of South Africa's most breathtaking wilderness areas, where you'll sleep under a blanket of stars, share stories around a crackling campfire, and wake up to stunning natural scenery.</p>
+            <article class="content-card">
+                <h2>Camping</h2>
+                <img src="images/act_2.jpg" alt="A campsite outdoors">
+                <p>Spend time outside and enjoy a night under the stars.</p>
             </article>
 
-            <article>
-                <h4>Mountain Biking Adventures</h4>
-                <img src="images/act_3.jpg" alt="A mountain biker riding down a dirt trail through South African hills" width="800" height="600">
-                <p>Feel the rush of adrenaline as you tackle thrilling mountain bike trails through South Africa's rugged terrain. Whether you're a beginner or an experienced rider, our guided mountain biking tours offer routes for every skill level, taking you through stunning landscapes you won't find anywhere else.</p>
+            <article class="content-card">
+                <h2>Mountain Biking</h2>
+                <img src="images/act_3.jpg" alt="A mountain biker on a trail">
+                <p>Ride outdoor trails at a pace that suits you.</p>
             </article>
-
-            <a href="https://www.southafrica.net">Visit South Africa Tourism</a>
-
         </section>
-        <p><a href="mailto:info@ubuntuoutdooradventures.co.za">Contact Us at info@ubuntuoutdooradventures.co.za</a></p>
 
+        <section class="intro">
+            <h2>Plan your next trip</h2>
+            <p><a href="TourPackages.html#hiking">Go to our hiking package</a></p>
+            <p>
+                Visit <a href="https://www.southafrica.net/">South African Tourism</a>
+                to find out more about travelling in South Africa.
+            </p>
+            <p>
+                <a href="mailto:info@ubuntuoutdooradventures.co.za">
+                    Email Ubuntu Outdoor Adventures
+                </a>
+            </p>
+        </section>
     </main>
-    <footer>© 2025 Ubuntu Outdoor Adventures. All rights reserved.</footer>
+
+    <footer>
+        <p>&copy; 2026 Ubuntu Outdoor Adventures</p>
+    </footer>
 </body>
 </html>

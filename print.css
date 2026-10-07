@@ -1,0 +1,60 @@
+@page {
+    margin: 2cm;
+}
+
+body {
+    margin: 0;
+    background: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.site-header {
+    background: white;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.site-header h1,
+h1,
+h2,
+h3 {
+    color: black;
+    text-shadow: none;
+}
+
+.site-header nav,
+.skip-link,
+footer {
+    display: none;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.home-columns,
+.package-grid,
+.activity-list {
+    display: block;
+}
+
+.intro,
+.content-card {
+    margin-bottom: 12pt;
+    background: white;
+    border: 1px solid #888;
+    box-shadow: none;
+    break-inside: avoid;
+}
+
+img {
+    max-width: 300pt;
+}
+
+a {
+    color: black;
+}

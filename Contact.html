@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ubuntu Outdoor Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header class="site-header">
+        <a href="Home.html">
+            <img src="images/logo.png" alt="Ubuntu Outdoor Adventures logo" width="80">
+        </a>
+
+        <h1>Ubuntu Outdoor Adventures</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Activities.html">Activities</a></li>
+                <li><a href="TourPackages.html">Tour Packages</a></li>
+                <li><a href="Bookings.html">Bookings</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Contact Us</h2>
+            <p>Use this form to send us a booking enquiry.</p>
+
+            <form class="booking-form" action="#" method="post">
+                <fieldset>
+                    <legend>Your contact details</legend>
+
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Booking details</legend>
+
+                    <label for="package">Preferred Adventure Package</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose a package</option>
+                        <option>Mountain Explorer</option>
+                        <option>Stars and Camping</option>
+                        <option>Trail Rider</option>
+                        <option>Nature Discovery</option>
+                        <option>Outdoor Weekend</option>
+                    </select>
+
+                    <label for="participants">Number of Participants</label>
+                    <input type="number" id="participants" name="participants"
+                           min="1" value="1" required>
+
+                    <label for="date">Preferred Booking Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other information</legend>
+
+                    <label for="website">Website (optional)</label>
+                    <input type="url" id="website" name="website">
+
+                    <label for="activity">Favourite Activity</label>
+                    <input type="text" id="activity" name="activity"
+                           list="activity-options">
+                    <datalist id="activity-options">
+                        <option value="Hiking">
+                        <option value="Camping">
+                        <option value="Mountain Biking">
+                        <option value="Nature Walks">
+                    </datalist>
+
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                </fieldset>
+
+                <button type="submit">Send Booking Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ubuntu Outdoor Adventures</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f5f1;
+    color: #26332b;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 5%;
+    background: linear-gradient(to right, #234b39, #477650);
+    border-bottom: 4px solid #c77b42;
+}
+
+.site-header h1 {
+    flex: 1;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.site-header nav {
+    flex-basis: 100%;
+}
+
+.site-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header nav a {
+    display: block;
+    padding: 7px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-header nav a:hover {
+    background-color: #173d29;
+    border-radius: 4px;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 24px auto;
+}
+
+h2,
+h3 {
+    color: #234b39;
+}
+
+p {
+    max-width: 720px;
+}
+
+.intro,
+.content-card {
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #738477;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.intro {
+    margin-bottom: 22px;
+}
+
+.intro img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.home-columns,
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.home-columns img,
+.activity-list img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.activity-list .content-card {
+    flex: 1 1 260px;
+}
+
+.activity-list picture {
+    display: block;
+}
+
+.content-card h2,
+.content-card h3 {
+    margin-top: 0;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption {
+    padding: 10px;
+    color: #234b39;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #738477;
+    text-align: left;
+}
+
+thead {
+    background-color: #234b39;
+    color: white;
+}
+
+thead th {
+    color: white;
+}
+
+tbody tr:nth-child(even),
+tfoot {
+    background-color: #e8eee7;
+}
+
+.booking-form {
+    max-width: 700px;
+}
+
+.booking-form fieldset {
+    margin: 0 0 18px;
+    padding: 16px;
+    border: 1px solid #738477;
+    border-radius: 8px;
+}
+
+.booking-form legend {
+    padding: 0 7px;
+    color: #234b39;
+    font-weight: bold;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 9px;
+    border: 1px solid #738477;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.booking-form button,
+.button-link {
+    display: inline-block;
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #234b39;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.booking-form button:hover,
+.button-link:hover {
+    background-color: #173d29;
+    opacity: 0.9;
+}
+
+a {
+    color: #174d30;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #a6461e;
+    outline-offset: 2px;
+}
+
+.site-header a:focus {
+    outline-color: white;
+}
+
+.sprite-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url("images/activity-sprite.svg");
+    background-repeat: no-repeat;
+}
+
+.icon-hiking {
+    background-position: 0 0;
+}
+
+.icon-camping {
+    background-position: -48px 0;
+}
+
+.icon-biking {
+    background-position: -96px 0;
+}
+
+footer {
+    padding: 12px 5%;
+    background-color: #234b39;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 750px) {
+    .home-columns,
+    .package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 16px;
+    }
+
+    .site-header {
+        padding: 14px;
+    }
+
+    .site-header h1 {
+        font-size: 21px;
+    }
+
+    .site-header nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        width: auto;
+        margin: 15px;
+    }
+
+    .home-columns,
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .content-card {
+        padding: 14px;
+    }
+}
